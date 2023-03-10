@@ -1,0 +1,70 @@
+@page {
+    /* size: auto; */
+    /* margin: 0mm; */
+    size: auto;
+    margin-bottom: 13mm;
+    margin-left: 10mm;
+    margin-right: 10mm;
+    margin-top: 7mm;
+}
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+}
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    /* text-decoration: underline 2px;
+       text-underline-offset: 2px; */
+}
+.date {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.contentBody {
+    margin-top: 10px;
+}
+.titleContainer {
+    text-align: center;
+    font-size: 14px;
+}
+.printTable {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 2480px;
+    width: 100%;
+}
+.printTable td {
+    width: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.printTable,
+th,
+td {
+    border: 0.5px solid black;
+    border-collapse: collapse;
+    color: black;
+}
+
+/* table {
+       page-break-after: auto;
+       -fs-table-paginate: paginate;
+  } */
+/* tr {
+       page-break-inside: avoid;
+       page-break-after: auto;
+  }
+  td {
+       page-break-inside: avoid;
+       page-break-after: auto;
+  } */
+thead {
+    display: table-header-group;
+}
+tbody {
+    page-break-after: always;
+}
+/* tfoot {
+       display: table-footer-group;
+  } */
